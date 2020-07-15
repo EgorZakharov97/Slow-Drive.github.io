@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.SettingsActivity">
+
+
+    <LinearLayout
+        android:layout_width="503dp"
+        android:layout_height="110dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/back_settings"
+            android:layout_width="106dp"
+            android:layout_height="65dp"
+            android:layout_weight="0"
+            android:backgroundTint="#FFEB3B"
+            android:contentDescription="TODO"
+            app:srcCompat="@android:drawable/ic_menu_revert" />
+
+        <LinearLayout
+            android:layout_width="28dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvl_header"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Speed limit"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvs_limit"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="TextView"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="117dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvs_header"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Current speed"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvs_speed"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="TextView"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="558dp"
+        android:layout_height="770dp"
+        android:clipToPadding="false"
+        android:scrollbarAlwaysDrawHorizontalTrack="true"
+        android:scrollbarStyle="outsideInset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="423dp"
+                android:layout_weight="1"
+                android:background="#F9F9F9"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Profile_hint"
+                    android:layout_width="397dp"
+                    android:layout_height="65dp"
+                    android:background="#F9F9F9"
+                    android:gravity="center"
+                    android:paddingLeft="20dp"
+                    android:text="Profile"
+                    android:textAlignment="textStart"
+                    android:textColor="#404040"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#F9F9F9">
+
+                    <TextView
+                        android:id="@+id/username_hint"
+                        android:layout_width="163dp"
+                        android:layout_height="match_parent"
+                        android:background="#F9F9F9"
+                        android:fontFamily="@font/hind_light"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:text="Username"
+                        android:textAlignment="textStart"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/usernamePrompt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#F9F9F9"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:paddingLeft="20dp"
+                        android:text="Username"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/black_overlay"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#F9F9F9">
+
+                    <TextView
+                        android:id="@+id/email_hint"
+                        android:layout_width="163dp"
+                        android:layout_height="match_parent"
+                        android:background="#F9F9F9"
+                        android:fontFamily="@font/hind_light"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:text="Email Address"
+                        android:textAlignment="textStart"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/emailPrompt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#F9F9F9"
+                        android:ems="10"
+                        android:paddingLeft="20dp"
+                        android:textAlignment="textStart"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#F9F9F9">
+
+                    <TextView
+                        android:id="@+id/currentPass_hint"
+                        android:layout_width="163dp"
+                        android:layout_height="match_parent"
+                        android:background="#F9F9F9"
+                        android:fontFamily="@font/hind_light"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:text="Current Password:"
+                        android:textAlignment="textStart"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/currPassPrompt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#F9F9F9"
+                        android:ems="10"
+                        android:inputType="textPassword"
+                        android:paddingLeft="20dp"
+                        android:textAlignment="textStart"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#F9F9F9">
+
+                    <TextView
+                        android:id="@+id/newPass_hint"
+                        android:layout_width="163dp"
+                        android:layout_height="match_parent"
+                        android:background="#F9F9F9"
+                        android:fontFamily="@font/hind_light"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:text="New Pasword:"
+                        android:textAlignment="textStart"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/newPassPrompt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#F9F9F9"
+                        android:ems="10"
+                        android:inputType="textPassword"
+                        android:paddingLeft="20dp"
+                        android:textAlignment="textStart"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#F9F9F9">
+
+                    <TextView
+                        android:id="@+id/confirmPass_hint"
+                        android:layout_width="163dp"
+                        android:layout_height="match_parent"
+                        android:background="#F9F9F9"
+                        android:fontFamily="@font/hind_light"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:text="Confirm Pasword:"
+                        android:textAlignment="textStart"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/confirmPassPrompt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#F9F9F9"
+                        android:ems="10"
+                        android:inputType="textPassword"
+                        android:paddingLeft="20dp"
+                        android:textAlignment="textStart"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#F9F9F9"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/PasswordAuthentication"
+                        android:layout_width="372dp"
+                        android:layout_height="match_parent"
+                        android:background="#F9F9F9"
+                        android:textAlignment="textStart"
+                        android:textColor="#A10707"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/password_submit"
+                        android:layout_width="112dp"
+                        android:layout_height="wrap_content"
+                        android:background="#F9F9F9"
+                        android:backgroundTint="#FFEB3B"
+                        android:gravity="center"
+                        android:text="@string/submit" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="#F9F9F9" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="446dp"
+                android:layout_weight="1"
+                android:background="#F9F9F9"
+                android:backgroundTint="#F9F9F9"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/settings_hint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingLeft="20dp"
+                    android:text="Settings"
+                    android:textAlignment="textStart"
+                    android:textColor="#252525"
+                    android:textSize="24sp"
+                    android:textStyle="bold|italic" />
+
+                <Switch
+                    android:id="@+id/sw_use_sound"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FFEB3B"
+                    android:fontFamily="@font/hind_light"
+                    android:paddingLeft="20dp"
+                    android:text="Use sound notification"
+                    android:textSize="18sp"
+                    android:thumbTint="#FFC107" />
+
+                <Switch
+                    android:id="@+id/swch_metric"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FFEB3B"
+                    android:fontFamily="@font/hind_light"
+                    android:paddingLeft="20dp"
+                    android:text="Metric Units"
+                    android:textSize="18sp"
+                    android:thumbTint="#FFC107" />
+
+                <Switch
+                    android:id="@+id/sw_speed_limit"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FFEB3B"
+                    android:fontFamily="@font/hind_light"
+                    android:paddingLeft="20dp"
+                    android:text="Request speed limit"
+                    android:textSize="18sp"
+                    android:thumbTint="#FFC107" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp">
+
+                    <TextView
+                        android:id="@+id/volume_hint"
+                        android:layout_width="78dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/hind_light"
+                        android:gravity="center_vertical"
+                        android:text="Volume"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <SeekBar
+                        android:id="@+id/volume_bar"
+                        style="@style/Widget.AppCompat.SeekBar"
+                        android:layout_width="169dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:progressTint="#FFC107"
+                        android:thumb="@drawable/thumb_settings"
+                        android:thumbTint="#00000000"
+                        android:thumbTintMode="add" />
+                </LinearLayout>
+
+                <Switch
+                    android:id="@+id/switch_req_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FFEB3B"
+                    android:fontFamily="@font/hind_light"
+                    android:paddingLeft="20dp"
+                    android:text="Request in background"
+                    android:textSize="18sp"
+                    android:thumbTint="#FFC107" />
+
+                <Button
+                    android:id="@+id/logout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FFEB3B"
+                    android:text="Logout"
+                    tools:text="Logout" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">SlowDrive</string>
+    <string name="sign_up">Sign-up</string>
+    <string name="login">Log-in</string>
+    <string name="password_prompt">Password</string>
+    <string name="username_prompt">Username</string>
+    <string name="signup_message">Invalid Input. Try again</string>
+    <string name="login_message">Invalid Input. Try again</string>
+
+
+    <string name="title_activity_location_history">LocationHistoryActivity</string>
+    <string name="warn">You have not over speeding in the area</string>
+
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="btn_enable">Start</string>
+    <string name="btn_disable">Stop</string>
+
+    <string name="submit"> Submit</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+
+</resources>
